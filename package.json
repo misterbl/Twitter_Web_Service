@@ -1,0 +1,12 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "a NodeJS web service which integrate with Twitter API",
+  "main": "index.js",
+  "author": "Laurent Bouhnik",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.9",
+    "yargs": "^10.1.1"
+  }
+}
