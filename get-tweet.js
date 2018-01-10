@@ -2,7 +2,7 @@ var Twit = require('twit');
 var argv = require('yargs').argv;
 var config = require('./config')
 
-var T = new Twit(config);
+var Twit = new Twit(config);
 var user = argv.user;
 var params = {screen_name: user}
 
@@ -14,4 +14,4 @@ function searchedData(err, data, response) {
   })
 }
 
-T.get('statuses/user_timeline', params, searchedData);
+Twit.get('statuses/user_timeline', params, searchedData);

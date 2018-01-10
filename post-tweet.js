@@ -2,7 +2,7 @@ var Twit = require('twit');
 var argv = require('yargs').argv;
 var config = require('./config')
 
-var T = new Twit(config);
+var Twit = new Twit(config);
 var tweet = { status: argv.tweet };
 
 console.log(`posting "${tweet.status}"...`);
@@ -16,4 +16,4 @@ function tweeted(err, data, response) {
   }
 }
 
-T.post('statuses/update', tweet, tweeted)
+Twit.post('statuses/update', tweet, tweeted)
