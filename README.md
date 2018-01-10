@@ -26,6 +26,7 @@ Once this is done, on the command line type:
 
 __node post-tweet.js --tweet="_The tweet you want to post_"__
 
+_Don't forget to write your tweet with quotation marks!_
 ### How to retrieve tweets
 To retrieve all the tweets of the specific user, on the command line type:
 
