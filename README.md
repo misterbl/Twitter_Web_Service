@@ -24,12 +24,14 @@ Now you have to enter the keys and access token in the config.js file, replacing
 
 Once this is done, on the command line type:
 
-__node post-tweet.js --tweet="_The tweet you want to post_"__
+__node index.js  --action=post --params="_The tweet you want to post_"__
+
 
 _Don't forget to write your tweet with quotation marks!_
 ### How to retrieve tweets
 To retrieve all the tweets of the specific user, on the command line type:
 
-__$ node get-tweet.js --user=_Name___
+__node index.js  --action=get --params=Name__
+
 
 ___Name___ being the name that the user displays on their twitter account, e.g LaurentBouhnik
