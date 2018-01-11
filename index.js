@@ -6,7 +6,7 @@ var Twit = new Twit(config);
 
 if(argv.action === "post"){
   var tweet = { status: argv.params };
-  console.log(`posting "${tweet.status}"...`);
+  console.log(`posting "${tweet.status}"...\n`);
   function tweeted(err, data, response) {
     if(err){
       console.log("Something went wrong!");
@@ -20,10 +20,10 @@ if(argv.action === "post"){
 }
 else if (argv.action === "get") {
   var params = {screen_name: argv.params}
-  console.log(`loading tweets from ${argv.params} now...`)
+  console.log(`loading tweets from ${argv.params} now...\n`)
   function searchedData(err, data, response) {
     data.map(tweet => {
-      console.log(tweet.text);
+      console.log(`${tweet.text}\n`);
     })
   }
   Twit.get('statuses/user_timeline', params, searchedData);
